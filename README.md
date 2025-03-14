@@ -12,7 +12,11 @@ https://github.com/Esri/deep-learning-frameworks
 These libraries are the easiest ways to integrate Pytorch, Keras, Tensorflow, and other machine learning methods into Pro in my experience, in large part due to ArcGIS Pro's method of training models. *The model creation and classification takes hours to complete. Times will vary based on the dedicated GPU memory the user has, but may take up to 10 hours with a standard, 4-gb GPU. 
 
 ** Methodology
-The process for model training, followed by classification, is not straightforward. In this version of the script, the user submits two dependencies: 
+The process for model training, followed by classification, is not straightforward. This script automatically applies specific configurations to the script to limit the learning curve needed to use the tool. 
+
+
+
+In ArcGIS Pro, create a new script tool and add the following script. It will create two parameters:
 
 1: The image to be classified. *Note: performing segmentation on the raster beforehand greatly enhances the accuracy of the classified raster,*
 
