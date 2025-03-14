@@ -11,7 +11,7 @@ In order to use this script, ArcGIS Pro Deep learning libraries must be installe
 https://github.com/Esri/deep-learning-frameworks
 These libraries are the easiest ways to integrate Pytorch, Keras, Tensorflow, and other machine learning methods into Pro in my experience, in large part due to ArcGIS Pro's method of training models. *The model creation and classification takes hours to complete. Times will vary based on the dedicated GPU memory the user has, but may take up to 10 hours with a standard, 4-gb GPU. 
 
-** Methodology
+## Methodology
 The process for model training, followed by classification, is not straightforward. This script automatically applies specific configurations to the script to limit the learning curve needed to use the tool. 
 
 
@@ -24,8 +24,8 @@ In ArcGIS Pro, create a new script tool and add the following script. It will cr
 
 With these inputs, the script creates a model using the training sites as inputs, then performs a Support Vector Machine classification on the image. After the creation of the classified image, the Summarize Categorical Raster tool is ran, which counts all of the pixels in each class. Using the sum, the scrip outputs a second table that calculates the percentage value for each class. 
 
-** Conclusion
+## Conclusion
 With the percentages of permeable surfaces, the tool may be run again using historical imagery of the same area. This will give the user the ability to see the amount of surface permeability changes over time as areas continue to be developed. 
 
-** Future Updates:
+## Future Updates:
 Because of the time limitations and expectations of this project, the ability to perform hydrologic analysis is not accounted for. Having the script automatically perform modelling based on the rates of which water can be absorbed into each surface would create a specialized and practical tool for use by land developers and policy makers. Additionally, being able to model the surface with the input of elevation and volume of water would help in this task. 
